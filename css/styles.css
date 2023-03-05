@@ -1,0 +1,223 @@
+:root {
+  --background-body-color: #ffffff;
+  --primary-text-color: #434455;
+  --titel-text-color: #2e2f42;
+  --button-text-color: #4d5ae5;
+  --button-hover-background: #404bbf;
+  --second-background-color: #f4f4fd;
+  --footer-text-color: #e7e9fc;
+  --background-menu-color: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Тіло сторінки */
+
+body {
+  margin: 0;
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*----Логотип---- */
+
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  color: var(--button-text-color);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.studio {
+  color: var(--titel-text-color);
+}
+
+/*---------------------- Навігація------------------ */
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--button-hover-background);
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--titel-text-color);
+}
+
+/*------------------------Адрес ------------------*/
+
+.address-list .address-item:hover,
+.address-list .address-item:focus {
+  color: var(--button-hover-background);
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-item {
+  color: var(--primary-text-color);
+  letter-spacing: 0.02em;
+}
+
+/* ------------------Головна частина--------------- */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: var(--titel-text-color);
+}
+/* Герой */
+.hero {
+  background-color: var(--titel-text-color);
+}
+.hero-title {
+  color: var(--background-body-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.hero-button:focus,
+.hero-button:hover {
+  color: var(--background-body-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: var(--button-hover-background);
+}
+
+.hero-button {
+  font-family: 'Roboto', sans-serif;
+  color: var(--background-body-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  background-color: var(--button-text-color);
+}
+
+/* Рішення */
+
+.solutions-text {
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.solutions-text-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--titel-text-color);
+}
+
+/* Приклади робіт */
+
+/* Команда */
+
+.team-text {
+  letter-spacing: 0.02em;
+}
+.team {
+  background: var(--second-background-color);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--titel-text-color);
+}
+
+/* Підвал */
+
+.footer {
+  background: var(--titel-text-color);
+}
+
+.footer-logo {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--button-text-color);
+}
+
+.footer-studio {
+  color: var(--second-background-color);
+}
+
+.footer-text {
+  color: var(--footer-text-color);
+  letter-spacing: 0.02em;
+}
+
+/*-------------------- Портфоліо -------------------*/
+
+.bar-btn {
+  font-family: 'Roboto', sans-serif;
+  color: var(--button-text-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: var(--second-background-color);
+}
+
+.bar-btn:focus,
+.bar-btn:hover {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: var(--button-hover-background);
+  color: var(--background-body-color);
+}
+
+.samples-titel {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--titel-text-color);
+}
+
+.samples-text {
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
