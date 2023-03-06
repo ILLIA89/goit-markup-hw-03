@@ -113,6 +113,10 @@ body {
 }
 
 .hero-button {
+  text-align: center;
+  min-width: 169px;
+  border-radius: 4px;
+  padding: 16px 32px;
   font-family: 'Roboto', sans-serif;
   color: var(--background-body-color);
   font-weight: 500;
