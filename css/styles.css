@@ -15,6 +15,8 @@
 }
 
 .list {
+  display: flex;
+  gap: 24px;
   list-style: none;
 }
 
@@ -44,6 +46,19 @@ img {
   display: block;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* --------------Тіло сторінки ------------------*/
 
 body {
@@ -60,15 +75,16 @@ body {
   padding-right: 15px;
   margin: 0 auto;
   outline: 2px solid tomato;
-}
-
-.title-container {
-  margin-bottom: 72px;
+  /* background-color: aqua; */
 }
 
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 /*-----------Логотип----------- */
@@ -131,12 +147,13 @@ body {
 }
 /* Герой */
 .hero {
+  padding: 188px 0;
   margin: 0 auto;
   text-align: center;
   background-color: var(--titel-text-color);
 }
 .hero-title {
-  padding-top: 182px;
+  /* padding-top: 182px; */
   width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
@@ -159,7 +176,6 @@ body {
 }
 
 .hero-button {
-  margin-bottom: 188px;
   text-align: center;
   min-width: 169px;
   border-radius: 4px;
@@ -172,14 +188,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   background-color: var(--button-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Рішення */
-
-.solutions-text-list {
-  padding-top: 144px;
-  padding-bottom: 120px;
-}
 
 .solutions-text {
   letter-spacing: 0.02em;
@@ -196,25 +208,18 @@ body {
 }
 
 /* ----------------Приклади робіт ----------------------*/
-
-.example-list {
-  padding-bottom: 120px;
+.section.example {
+  padding-top: 0;
 }
-/* .example-container {
-} */
+
+.title-container {
+  margin-bottom: 72px;
+}
 
 /* ------------------- Команда ------------------------------*/
-.container-team {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 
 .team {
   background: var(--second-background-color);
-}
-
-.img-team {
-  margin-bottom: 32px;
 }
 
 .team-name {
@@ -261,6 +266,9 @@ body {
 /*-------------------- Портфоліо -------------------*/
 
 .bar-btn {
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding: 12px 24px;
   font-family: 'Roboto', sans-serif;
   color: var(--button-text-color);
   font-weight: 500;
