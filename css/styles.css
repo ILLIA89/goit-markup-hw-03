@@ -17,7 +17,6 @@
 .list {
   list-style: none;
   margin: 0;
-  pading: 0;
 }
 
 p,
@@ -83,13 +82,16 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e7e9fc;
 }
 
 .section {
   padding: 120px 0;
 }
 
-/*-----------Логотип----------- */
+/*-------------------Логотип--------------------- */
 
 .link {
   text-decoration: none;
@@ -125,9 +127,6 @@ body {
 .header-container {
   display: flex;
   margin-right: auto;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #e7e9fc;
 }
 
 .nav-link:hover,
@@ -216,12 +215,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* Рішення */
-
-.solutions-text {
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
+/*-------------------- Рішення--------------------- */
 
 .solutions-text-title {
   margin-bottom: 8px;
@@ -232,9 +226,22 @@ body {
   color: var(--titel-text-color);
 }
 
+.solutions-text {
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
 .solutions-text-list {
   display: flex;
-  gap: 24px;
+}
+
+.solutions-text-item {
+  width: calc((100% - 72px) / 4);
+  margin-right: 24px;
+}
+
+.solutions-text-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 /* ----------------Приклади робіт ----------------------*/
@@ -246,9 +253,17 @@ body {
   margin-bottom: 72px;
 }
 
+.example-item {
+  width: calc((100% - 48px) / 3);
+  margin-right: 24px;
+}
+
+.example-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .example-list {
   display: flex;
-  gap: 24px;
 }
 /* ------------------- Команда ------------------------------*/
 
@@ -276,11 +291,17 @@ body {
 
 .team-card {
   background-color: var(--background-body-color);
+  width: calc((100% - 72px) / 4);
+  margin-right: 24px;
+}
+
+.team-card:nth-child(4n) {
+  margin-right: 0;
 }
 
 .team-list {
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 /* ------------------------Підвал--------------------------- */
@@ -296,7 +317,7 @@ body {
 }
 
 .footer-logo {
-  display: block;
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -319,7 +340,7 @@ body {
   width: 264px;
 }
 
-/*-------------------- Портфоліо -------------------*/
+/*-------------------- Портфоліо --------------------*/
 
 .section.samples {
   padding-top: 96px;
@@ -334,8 +355,20 @@ body {
 .samples-pic {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
+}
+
+.samples-list {
+  width: calc((100% - 48px) / 3);
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+
+.samples-list:nth-child(3n) {
+  margin-right: 0;
+}
+
+.samples-list:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .samples-pic-container {
@@ -348,7 +381,7 @@ body {
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #e7e9fc;
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 .bar-btn {
   border: 1px solid #e7e9fc;
@@ -377,14 +410,12 @@ body {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 8px;
-  padding-left: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--titel-text-color);
 }
 
 .samples-text {
-  padding-left: 16px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
